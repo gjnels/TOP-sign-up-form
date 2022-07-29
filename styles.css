@@ -1,13 +1,65 @@
-:root {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+@import "./Odinson-224w.ttf";
+@font-face {
+  font-family: Odinson;
+  src: url(./Odinson-224w.ttf);
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  padding: inherit;
-  margin: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40vw 1fr;
+}
+
+.image {
+  background: url("./leaves.jpg") no-repeat;
+  background-size: auto 200%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.logo {
+  margin-top: 25vh;
+  padding: 16px 0;
+  font-size: 3rem;
+  font-family: Odinson;
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 6rem;
+}
+
+.accredidation {
+  padding: 16px 0;
+  font-size: 0.75rem;
+}
+
+.accredidation a {
+  color: inherit;
 }
