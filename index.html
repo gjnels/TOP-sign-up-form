@@ -31,7 +31,84 @@
           >
         </p>
       </div>
-      <div class="main"></div>
+      <div class="main">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em>
+          to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+        <form>
+          <fieldset>
+            <div class="input">
+              <label for="first-name" label="First Name">First Name</label>
+              <input
+                id="first-name"
+                type="text"
+                name="first_name"
+                required
+                placeholder=" "
+              />
+            </div>
+            <div class="input">
+              <label for="last-name" label="Last Name">Last Name</label>
+              <input
+                id="last-name"
+                type="text"
+                name="last_name"
+                required
+                placeholder=" "
+              />
+            </div>
+            <div class="input">
+              <label for="email" label="Email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder=" "
+              />
+            </div>
+            <div class="input">
+              <label for="phone" label="Phone Numer">Phone Number</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone_number"
+                pattern="[0-9]{3}[-]?[0-9]{3}[-]?[0-9]{4}"
+                required
+                placeholder=" "
+              />
+            </div>
+            <div class="input">
+              <label for="password" label="Password">Password</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                required
+                minlength="3"
+                placeholder=" "
+              />
+            </div>
+            <div class="input">
+              <label for="confirm-password" label="Confirm Password"
+                >Confirm Password</label
+              >
+              <input
+                id="confirm-password"
+                type="password"
+                required
+                placeholder=" "
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#">Log In</a></p>
+      </div>
     </div>
   </body>
 </html>
